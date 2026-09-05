@@ -225,12 +225,22 @@
   document.head.appendChild(cuteControlsStyle);
   let libraryPlaying = false;
   let lastAutoAdvance = 0;
+  let autoAdvanceTimer = null;
+  const scheduleAutoAdvance = track => {
+    clearTimeout(autoAdvanceTimer);
+    const source = (window.__biliTrackMap || {})[track.number] || {};
+    // B 站 iframe 在部分浏览器不会回传播放结束事件；按视频时长兜底连续播放。
+    const seconds = Math.max(60, Number(source.duration) || 240);
+    autoAdvanceTimer = window.setTimeout(() => {
+      if (libraryPlaying) move(1);
+    }, (seconds + 2) * 1000);
+  };
   const play = (index, autoplay = true) => {
     const track = tracks[index]; if (!track) return;
     window.__musicLibraryIndex = index;
     title.textContent = track.title;
     subtitle.textContent = track.artist;
-    playlist.querySelectorAll('button').forEach((button, i) => button.classList.toggle('active', i === index));
+    playlist.querySelectorAll('button').forEach(button => button.classList.toggle('active', Number(button.dataset.track) === index));
     const bvid = direct[track.number];
     if (bvid) {
       provider.textContent = 'BILIBILI · 连续播放';
@@ -238,10 +248,12 @@
       placeholder.style.display = 'none';
       playButton.textContent = 'Ⅱ';
       libraryPlaying = true;
+      scheduleAutoAdvance(track);
       return;
     }
     provider.textContent = 'BILIBILI · 播放源整理中';
     frame.src = 'about:blank';
+    clearTimeout(autoAdvanceTimer);
     placeholder.style.display = 'grid';
     const hint = placeholder.querySelector('b');
     if (hint) hint.textContent = '曲目已切换，播放源正在逐首整理';
@@ -267,6 +279,7 @@
     event.stopImmediatePropagation();
     if (libraryPlaying) {
       frame.src = 'about:blank';
+      clearTimeout(autoAdvanceTimer);
       placeholder.style.display = 'grid';
       playButton.textContent = '▶';
       libraryPlaying = false;
