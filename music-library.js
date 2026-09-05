@@ -190,17 +190,15 @@
 198|はじまりの曲 (First Song 官方版)|Shake99
 199|好きだから。（因为我喜欢你。）|『ユイカ』
 200|心做し（心理作用）|蝶々P / GUMI`;
-  const tracks = raw.split('\n').map(line => {
+  const allTracks = raw.split('\n').map(line => {
     const [number, title, artist] = line.split('|');
     return { number: Number(number), title, artist, query: `${title} ${artist}` };
   });
   // 播放来源只来自已人工审核的映射，避免旧示例曲目绕过审核。
   const direct = {};
   Object.entries(window.__biliTrackMap || {}).forEach(([number, source]) => { direct[number] = source.bvid; });
-  // 只显示已取得哔哩哔哩视频号的歌曲；没有来源的曲目不进入可播放歌单。
-  for (let index = tracks.length - 1; index >= 0; index--) {
-    if (!direct[tracks[index].number]) tracks.splice(index, 1);
-  }
+  // 全部收藏曲目都保留在界面中；连续播放队列只包含已经审核过来源的歌曲。
+  const tracks = allTracks.filter(track => direct[track.number]);
   const playlist = document.querySelector('#playlist');
   const frame = document.querySelector('#music-frame');
   const placeholder = document.querySelector('#stage-placeholder');
@@ -222,6 +220,7 @@
     .controls .shuffle-button:hover,.controls .play-button:hover{transform:translateY(-2px) rotate(-4deg)}
     .controls #shuffle-button{gap:4px;font-size:13px!important}.controls #shuffle-button span{font-size:9px}
     .controls .play-button{font-size:17px!important;box-shadow:0 7px 16px rgba(32,143,218,.28)!important}
+    .playlist .source-pending{opacity:.52;cursor:not-allowed!important}.playlist .source-pending>b{color:#9faebe}
   `;
   document.head.appendChild(cuteControlsStyle);
   let libraryPlaying = false;
@@ -249,7 +248,11 @@
     playButton.textContent = '▶';
     libraryPlaying = false;
   };
-  playlist.innerHTML = tracks.map((track, index) => `<button class="${index === 0 ? 'active' : ''}" data-track="${index}"><i>${String(track.number).padStart(3, '0')}</i><span>${track.title}<small>${track.artist}</small></span><b>B站</b></button>`).join('');
+  playlist.innerHTML = allTracks.map(track => {
+    const playableIndex = tracks.findIndex(item => item.number === track.number);
+    const playable = playableIndex >= 0;
+    return `<button class="${playableIndex === 0 ? 'active' : ''}${playable ? '' : ' source-pending'}"${playable ? ` data-track="${playableIndex}"` : ' aria-disabled="true"'}><i>${String(track.number).padStart(3, '0')}</i><span>${track.title}<small>${track.artist}</small></span><b>${playable ? 'B站' : '待补源'}</b></button>`;
+  }).join('');
   playlist.addEventListener('click', event => {
     const button = event.target.closest('button[data-track]');
     if (button) play(Number(button.dataset.track));
