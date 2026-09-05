@@ -194,14 +194,8 @@
     const [number, title, artist] = line.split('|');
     return { number: Number(number), title, artist, query: `${title} ${artist}` };
   });
-  const direct = {
-    3: 'BV1mj3t6sERy',
-    48: 'BV1Xx4y1t7up',
-    112: 'BV1UKxAzKE4m',
-    151: 'BV1UKxAzKE4m',
-    152: 'BV1UKxAzKE4m',
-    186: 'BV1UKxAzKE4m'
-  };
+  // 播放来源只来自已人工审核的映射，避免旧示例曲目绕过审核。
+  const direct = {};
   Object.entries(window.__biliTrackMap || {}).forEach(([number, source]) => { direct[number] = source.bvid; });
   // 只显示已取得哔哩哔哩视频号的歌曲；没有来源的曲目不进入可播放歌单。
   for (let index = tracks.length - 1; index >= 0; index--) {
