@@ -209,7 +209,23 @@
   const provider = document.querySelector('#provider');
   const playButton = document.querySelector('#play-button');
   if (!playlist || !frame) return;
+  const previousButton = document.querySelector('#previous-track');
+  const nextButton = document.querySelector('#next-track');
+  const shuffleButton = document.querySelector('#shuffle-button');
+  if (previousButton) previousButton.textContent = '⏮';
+  if (nextButton) nextButton.textContent = '⏭';
+  if (shuffleButton) shuffleButton.innerHTML = '⤨ <span>顺序播放</span>';
+  const cuteControlsStyle = document.createElement('style');
+  cuteControlsStyle.textContent = `
+    .controls .shuffle-button,.controls .play-button{display:inline-grid;place-items:center;transition:transform .2s,box-shadow .2s!important}
+    .controls .shuffle-button{min-width:36px;height:36px;padding:0 10px!important;border-radius:14px!important;font-size:16px!important;line-height:1!important}
+    .controls .shuffle-button:hover,.controls .play-button:hover{transform:translateY(-2px) rotate(-4deg)}
+    .controls #shuffle-button{gap:4px;font-size:13px!important}.controls #shuffle-button span{font-size:9px}
+    .controls .play-button{font-size:17px!important;box-shadow:0 7px 16px rgba(32,143,218,.28)!important}
+  `;
+  document.head.appendChild(cuteControlsStyle);
   let libraryPlaying = false;
+  let lastAutoAdvance = 0;
   const play = (index, autoplay = true) => {
     const track = tracks[index]; if (!track) return;
     window.__musicLibraryIndex = index;
@@ -218,10 +234,10 @@
     playlist.querySelectorAll('button').forEach((button, i) => button.classList.toggle('active', i === index));
     const bvid = direct[track.number];
     if (bvid) {
-      provider.textContent = 'BILIBILI · 可播放';
+      provider.textContent = 'BILIBILI · 连续播放';
       frame.src = `https://player.bilibili.com/player.html?bvid=${bvid}&page=1&high_quality=1&autoplay=${autoplay ? 1 : 0}`;
       placeholder.style.display = 'none';
-      playButton.textContent = '■';
+      playButton.textContent = 'Ⅱ';
       libraryPlaying = true;
       return;
     }
@@ -239,6 +255,11 @@
     if (button) play(Number(button.dataset.track));
   });
   // 接管主播放键，避免旧的四首示例歌单把当前曲目重置为《全速向光》。
+  const move = (direction = 1) => {
+    if (!tracks.length) return;
+    const current = Number.isInteger(window.__musicLibraryIndex) ? window.__musicLibraryIndex : 0;
+    play((current + direction + tracks.length) % tracks.length, true);
+  };
   playButton.addEventListener('click', event => {
     event.stopImmediatePropagation();
     if (libraryPlaying) {
@@ -252,5 +273,15 @@
   }, true);
   window.__musicLibrary = tracks;
   window.__playLibraryTrack = play;
+  window.__continueMusicLibrary = move;
   window.__musicLibraryIndex = 0;
+  // B 站播放器会因视频类型发送不同的结束事件，统一接住后切换下一首。
+  window.addEventListener('message', event => {
+    const data = event.data;
+    const kind = String(data?.event || data?.type || data?.name || data?.data?.event || '').toLowerCase();
+    if (!/video[_-]?ended|playback[_-]?ended|media[_-]?ended|playlist[_-]?end/.test(kind)) return;
+    if (Date.now() - lastAutoAdvance < 1200) return;
+    lastAutoAdvance = Date.now();
+    move(1);
+  });
 })();
