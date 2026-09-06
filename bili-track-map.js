@@ -48,6 +48,13 @@ window.__biliTrackMap={
     "author": "カササギ",
     "play": 11175000
   },
+  "8": {
+    "matchedTitle": "Beanie（用户提供来源）",
+    "bvid": "BV1aRpqe3E7v",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "9": {
     "matchedTitle": "〖C社6子/4K〗Blessing - halyosy 中日字幕 魔法未来2022",
     "bvid": "BV1Fh4y1K7Sn",
@@ -60,6 +67,20 @@ window.__biliTrackMap={
     "author": "Sean_Dream",
     "duration": 205,
     "play": 271821
+  },
+  "11": {
+    "matchedTitle": "遠い空へ（飞向遥远的天空）（用户提供来源）",
+    "bvid": "BV1564y1e7VD",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "12": {
+    "matchedTitle": "かたわれ時（君の名は。）（用户提供来源）",
+    "bvid": "BV1ix411z79R",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "13": {
     "matchedTitle": "米津玄师与宇多田光强强联手！《JANE DOE》MV出炉！",
@@ -75,6 +96,13 @@ window.__biliTrackMap={
     "duration": 111,
     "play": 427054
   },
+  "15": {
+    "matchedTitle": "passion（用户提供来源）",
+    "bvid": "BV1cu5s65EQ6",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "16": {
     "matchedTitle": "【盗梦空间】Hans Zimmer-Time",
     "bvid": "BV1eC4y147a8",
@@ -88,6 +116,13 @@ window.__biliTrackMap={
     "author": "alittlepussy",
     "duration": 90,
     "play": 23678
+  },
+  "18": {
+    "matchedTitle": "Lの思想（L的思想）（用户提供来源）",
+    "bvid": "BV1TzcJzHECz",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "19": {
     "matchedTitle": "【真·4K修复】周杰伦《雨下一整晚》MV",
@@ -124,6 +159,27 @@ window.__biliTrackMap={
     "duration": 305,
     "play": 1321445
   },
+  "26": {
+    "matchedTitle": "每天都在一起（用户提供来源）",
+    "bvid": "BV1kwoVBUEPv",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "27": {
+    "matchedTitle": "New Rules (Remix)（用户提供来源）",
+    "bvid": "BV1jgjyzGE1t",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "28": {
+    "matchedTitle": "New Rules（用户提供来源）",
+    "bvid": "BV1jgjyzGE1t",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "29": {
     "matchedTitle": "李荣浩《恋人》百万豪装录音棚大声听",
     "bvid": "BV1d1bnzVErx",
@@ -137,6 +193,20 @@ window.__biliTrackMap={
     "author": "JLRS-jayfm",
     "duration": 215,
     "play": 6737982
+  },
+  "31": {
+    "matchedTitle": "明明就 - 钢琴版（用户提供来源）",
+    "bvid": "BV1BB4y1v7Bs",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "32": {
+    "matchedTitle": "Una Mattina (Deep House Remix)（用户提供来源）",
+    "bvid": "BV1i8vEeZEyL",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "34": {
     "matchedTitle": "【あたらよ / 可惜夜】また夏を追う / 再度追逐夏天【官方MV】",
@@ -215,6 +285,13 @@ window.__biliTrackMap={
     "duration": 228,
     "play": 275350
   },
+  "46": {
+    "matchedTitle": "ray（超かぐや姫！Version）（用户提供来源）",
+    "bvid": "BV1TvPPzSEr4",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "47": {
     "matchedTitle": "【长笛】超かぐや姬 星降る海 - Aqu3ra/早見沙織",
     "bvid": "BV14j326MEvb",
@@ -229,6 +306,13 @@ window.__biliTrackMap={
     "duration": 114,
     "play": 1028901
   },
+  "52": {
+    "matchedTitle": "I Can't Wait（用户提供来源）",
+    "bvid": "BV15GmhBaEZF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "53": {
     "matchedTitle": "【钢琴】超唯美三手联弹《路小雨》（不能说的秘密插曲）琥珀与哦啾sama首次联动！",
     "bvid": "BV1ZD4y1o7zK",
@@ -236,12 +320,26 @@ window.__biliTrackMap={
     "duration": 100,
     "play": 53027
   },
+  "54": {
+    "matchedTitle": "真夜中のドア / STAY WITH ME（用户提供来源）",
+    "bvid": "BV1wJ4ezQEHQ",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "55": {
     "matchedTitle": "【EVA新剧场版：Q主题曲】桜流し [宇多田光]",
     "bvid": "BV1fh411k7p7",
     "author": "StarGazerHare",
     "duration": 282,
     "play": 1121472
+  },
+  "56": {
+    "matchedTitle": "Barricades <MODv>（用户提供来源）",
+    "bvid": "BV1YZ4y1S7nn",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "57": {
     "matchedTitle": "【𝐇𝐢-𝐑𝐞𝐬无损音质】｜《Duvet》- bôa -‘And you don&#x27;t seem to understand’",
@@ -291,6 +389,13 @@ window.__biliTrackMap={
     "author": "阿赫official",
     "duration": 268,
     "play": 11946943
+  },
+  "65": {
+    "matchedTitle": "MAMBA OUT SKIT（用户提供来源）",
+    "bvid": "BV16BquYbEFx",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "67": {
     "matchedTitle": "路小雨｜不能说的秘密",
@@ -362,6 +467,20 @@ window.__biliTrackMap={
     "duration": 239,
     "play": 9736765
   },
+  "91": {
+    "matchedTitle": "poster boy (phonk)（用户提供来源）",
+    "bvid": "BV1hkqdYGEjc",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "92": {
+    "matchedTitle": "夕映えの約束 The Promise at Sunset（用户提供来源）",
+    "bvid": "BV1pQfdYQEgF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "94": {
     "matchedTitle": "2:23 AM -しゃろう",
     "bvid": "BV1Fz4y1y7nM",
@@ -369,12 +488,26 @@ window.__biliTrackMap={
     "duration": 197,
     "play": 152490
   },
+  "95": {
+    "matchedTitle": "Counter Attack-Mankind（用户提供来源）",
+    "bvid": "BV18p4y1w7fm",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "96": {
     "matchedTitle": "静谧深邃 触动心灵《The Garden of Escapism逃避现实的花园》一首适合静静欣赏的音乐",
     "bvid": "BV1YW4y167za",
     "author": "音乐You选",
     "duration": 220,
     "play": 102097
+  },
+  "97": {
+    "matchedTitle": "nagashi（治愈版）（用户提供来源）",
+    "bvid": "BV1Q4421Q7qk",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "98": {
     "matchedTitle": "【Hi-Res无损】TK from 凛として時雨「unravel」東京喰種トーキョーグール",
@@ -389,6 +522,13 @@ window.__biliTrackMap={
     "author": "AClearriver",
     "duration": 2569,
     "play": 388151
+  },
+  "101": {
+    "matchedTitle": "We Don't Talk Anymore（地球脉动）（用户提供来源）",
+    "bvid": "BV1CcGHzLEsy",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "102": {
     "matchedTitle": "日推歌单  ‖“独享静谧时光○纯音乐【学习/放松】”‖《Differences》-Rain",
@@ -446,6 +586,27 @@ window.__biliTrackMap={
     "duration": 3605,
     "play": 3316
   },
+  "112": {
+    "matchedTitle": "Bunny Bunny Carrot Carrot（用户提供来源）",
+    "bvid": "BV1ED4y1M7BJ",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "113": {
+    "matchedTitle": "Void（用户提供来源）",
+    "bvid": "BV1wt4y1d7Tu",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "114": {
+    "matchedTitle": "Midnight City（用户提供来源）",
+    "bvid": "BV1zs4y1G7ha",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "115": {
     "matchedTitle": "シカ色デイズ 鹿色Days 结尾附加版",
     "bvid": "BV1TJ4m1M7yQ",
@@ -467,12 +628,40 @@ window.__biliTrackMap={
     "duration": 3511,
     "play": 807452
   },
+  "118": {
+    "matchedTitle": "Billie Jean 2008（用户提供来源）",
+    "bvid": "BV1igfoYzEu7",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "119": {
+    "matchedTitle": "secret base ～君がくれたもの～（用户提供来源）",
+    "bvid": "BV1V24y1L7e6",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "120": {
+    "matchedTitle": "Tokyo（用户提供来源）",
+    "bvid": "BV19U4y1W7oo",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "121": {
     "matchedTitle": "【囧菌翻唱】我的悲伤是水做的",
     "bvid": "BV1gr4y1K76b",
     "author": "封茗囧菌",
     "duration": 227,
     "play": 337240
+  },
+  "122": {
+    "matchedTitle": "its not so bad（用户提供来源）",
+    "bvid": "BV1Qd5N6gE5W",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "123": {
     "matchedTitle": "今日单曲·丁达尔的梦|Youzee Music |舒缓|治愈|放松|纯音乐|小憩时刻",
@@ -495,6 +684,13 @@ window.__biliTrackMap={
     "duration": 271,
     "play": 29614
   },
+  "126": {
+    "matchedTitle": "Wasted (Nightcore)（用户提供来源）",
+    "bvid": "BV19v411w7Vk",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "128": {
     "matchedTitle": "日推歌单｜「爱让我们都变成了小孩」｜《子ども (小孩)》",
     "bvid": "BV1GEVxzVEA4",
@@ -502,12 +698,47 @@ window.__biliTrackMap={
     "duration": 222,
     "play": 760
   },
+  "129": {
+    "matchedTitle": "鎖那-彼女は旅に出る（用户提供来源）",
+    "bvid": "BV1fy4y1B7yQ",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "130": {
+    "matchedTitle": "Yellow（用户提供来源）",
+    "bvid": "BV1GY4y1w7HK",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "131": {
+    "matchedTitle": "私だけダメな恋（用户提供来源）",
+    "bvid": "BV1XC4y1Q7Ld",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "133": {
+    "matchedTitle": "MILABO（用户提供来源）",
+    "bvid": "BV1Ry4y1y7pJ",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "134": {
     "matchedTitle": "百万级装备听《Closer》- The Chainsmokers/Halsey【Hi-Res】",
     "bvid": "BV1e24y1r7M8",
     "author": "JLRS日落fm",
     "duration": 246,
     "play": 3988542
+  },
+  "135": {
+    "matchedTitle": "NIGHT DANCER（用户提供来源）",
+    "bvid": "BV1k6E36JE4w",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "136": {
     "matchedTitle": "YOASOBI《たぶん（大概）》百万豪装录音棚大声听",
@@ -529,12 +760,54 @@ window.__biliTrackMap={
     "duration": 149,
     "play": 201696
   },
+  "139": {
+    "matchedTitle": "The History (Piano Version)（用户提供来源）",
+    "bvid": "BV1mK4y1q7nf",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "141": {
+    "matchedTitle": "Hot Milk（热牛奶）（用户提供来源）",
+    "bvid": "BV1Ay421q7SF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "142": {
+    "matchedTitle": "Morose Dreamer (Lofi Version)（用户提供来源）",
+    "bvid": "BV1Ux421S7qF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "143": {
+    "matchedTitle": "ワンダー・ファニー・ハーモニー（用户提供来源）",
+    "bvid": "BV1HE421g7Ne",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "144": {
+    "matchedTitle": "IF YOU（氛围感）（用户提供来源）",
+    "bvid": "BV12vMP65E7B",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "145": {
     "matchedTitle": "【日推歌单】｜“00后都在听什么歌？”《路小雨 | Lu Xiao Yu (from &quot;Secret&quot;)》/Michael Tai",
     "bvid": "BV1FJANejEoH",
     "author": "稻奇",
     "duration": 186,
     "play": 797
+  },
+  "147": {
+    "matchedTitle": "Hate Me (DJ版)（用户提供来源）",
+    "bvid": "BV1mv1FBtE72",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "148": {
     "matchedTitle": "日推歌单｜&lt;像傻子一样，面对无法挽回的你&gt;《EYES, NOSE, LIPS (眼，鼻，嘴)》-TAEYANG",
@@ -550,6 +823,27 @@ window.__biliTrackMap={
     "duration": 243,
     "play": 2012362
   },
+  "151": {
+    "matchedTitle": "Summertime Archive（用户提供来源）",
+    "bvid": "BV1DMHSeTEqD",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "152": {
+    "matchedTitle": "Irodori Canvas (Instrumental)（用户提供来源）",
+    "bvid": "BV1t7AVeSEVT",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "153": {
+    "matchedTitle": "The Successor（用户提供来源）",
+    "bvid": "BV1jr4y1Z7jF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "154": {
     "matchedTitle": "Bic Runga - Listening for The Weather",
     "bvid": "BV11X4y1N7Mj",
@@ -562,6 +856,13 @@ window.__biliTrackMap={
     "bvid": "BV1vPP6eTEnn",
     "author": "羊小星",
     "play": 311000
+  },
+  "156": {
+    "matchedTitle": "Barricades < MOVIEver. >（用户提供来源）",
+    "bvid": "BV1YZ4y1S7nn",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "157": {
     "matchedTitle": "“这首歌没有哪个版本能超过原唱！！”《Somebody That I Used To Know》",
@@ -577,12 +878,82 @@ window.__biliTrackMap={
     "duration": 229,
     "play": 13710
   },
+  "159": {
+    "matchedTitle": "春日影 (MyGO!!!!! ver.)（用户提供来源）",
+    "bvid": "BV1JHLUz4EUy",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "160": {
+    "matchedTitle": "Call of Silence (DJ MOUN Remix)（用户提供来源）",
+    "bvid": "BV1bs4y1u7rk",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "161": {
+    "matchedTitle": "Faded Light（用户提供来源）",
+    "bvid": "BV1uB4y1G7vC",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "162": {
+    "matchedTitle": "Cry For Me（用户提供来源）",
+    "bvid": "BV1KdSmYyEyY",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "163": {
+    "matchedTitle": "Meet The Frowines X Lovely Bastards（用户提供来源）",
+    "bvid": "BV19x421C7U4",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "164": {
+    "matchedTitle": "Season of Gold（用户提供来源）",
+    "bvid": "BV1pN411G7vT",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "165": {
     "matchedTitle": "“光听前奏就给我听爽了！” |《バケモノの唄》",
     "bvid": "BV1Y8JtzNEz5",
     "author": "Yuki_可依",
     "duration": 256,
     "play": 84163
+  },
+  "166": {
+    "matchedTitle": "Discovery（用户提供来源）",
+    "bvid": "BV1ioEKzVEub",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "167": {
+    "matchedTitle": "梦路の花（用户提供来源）",
+    "bvid": "BV1rj42197KP",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "168": {
+    "matchedTitle": "잘 알지도 못하면서（用户提供来源）",
+    "bvid": "BV1DyCtBMEaX",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "170": {
+    "matchedTitle": "Fading Away（纯享版）（用户提供来源）",
+    "bvid": "BV1Ce5nzDE6k",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "171": {
     "matchedTitle": "【泽野弘之】《eye-water》Music Video",
@@ -591,6 +962,13 @@ window.__biliTrackMap={
     "duration": 226,
     "play": 345222
   },
+  "173": {
+    "matchedTitle": "Moshi Moshi（用户提供来源）",
+    "bvid": "BV1X1DaBzEtH",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "175": {
     "matchedTitle": "【纯音乐】Sacred Play (Radio Edit)",
     "bvid": "BV1NmsPzPEUP",
@@ -598,12 +976,33 @@ window.__biliTrackMap={
     "duration": 226,
     "play": 2475
   },
+  "176": {
+    "matchedTitle": "Blue Archive OST – Target for Love（用户提供来源）",
+    "bvid": "BV1DB4y1q7kU",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
+  "177": {
+    "matchedTitle": "Be Lost（用户提供来源）",
+    "bvid": "BV1At4y1K7MN",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "178": {
     "matchedTitle": "“救命好可爱但怎么透着一股子病味” |《だいあるのーと》",
     "bvid": "BV1hiNbezE6n",
     "author": "Yuki_可依",
     "duration": 126,
     "play": 843518
+  },
+  "179": {
+    "matchedTitle": "エブリデイいっしょ♪（每天一起♪）（用户提供来源）",
+    "bvid": "BV1vN4y1U77B",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
   },
   "180": {
     "matchedTitle": "“非常好音乐，让我的手机左右摇晃”【Music】Doodle——Zachz Winner",
@@ -675,6 +1074,13 @@ window.__biliTrackMap={
     "duration": 284,
     "play": 1427
   },
+  "192": {
+    "matchedTitle": "Tek It（氛围版）（用户提供来源）",
+    "bvid": "BV1cj411s7cD",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "193": {
     "matchedTitle": "【4K60P】彼时还稚嫩的周董《半岛铁盒》The One演唱会",
     "bvid": "BV1a54y1s7sJ",
@@ -711,4 +1117,4 @@ window.__biliTrackMap={
     "play": 12363620
   }
 };
-window.__biliTrackCount=102;
+window.__biliTrackCount=160;
