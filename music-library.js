@@ -295,9 +295,12 @@
   window.__musicLibraryIndex = 0;
   // B 站播放器会因视频类型发送不同的结束事件，统一接住后切换下一首。
   window.addEventListener('message', event => {
+    if (event.origin !== 'https://player.bilibili.com') return;
     const data = event.data;
-    const kind = String(data?.event || data?.type || data?.name || data?.data?.event || '').toLowerCase();
-    if (!/video[_-]?ended|playback[_-]?ended|media[_-]?ended|playlist[_-]?end/.test(kind)) return;
+    const kind = typeof data === 'string'
+      ? data.toLowerCase()
+      : String(data?.event || data?.type || data?.name || data?.data?.event || '').toLowerCase();
+    if (!/bilibili:player:ended|video[_-]?ended|playback[_-]?ended|media[_-]?ended|playlist[_-]?end/.test(kind)) return;
     if (Date.now() - lastAutoAdvance < 1200) return;
     lastAutoAdvance = Date.now();
     move(1);
