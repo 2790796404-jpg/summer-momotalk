@@ -189,7 +189,11 @@
 197|Sweetly (Inst.)|Lord Kael
 198|はじまりの曲 (First Song 官方版)|Shake99
 199|好きだから。（因为我喜欢你。）|『ユイカ』
-200|心做し（心理作用）|蝶々P / GUMI`;
+200|心做し（心理作用）|蝶々P / GUMI
+201|天气之子 - Grand Escape（钢琴）|Animenz
+202|会呼吸的痛（DJ纯享版）|梁静茹
+203|Time is broken|氛围音乐
+204|明明一动不动但还是好热哦（Remix）|quilt heron`;
   const allTracks = raw.split('\n').map(line => {
     const [number, title, artist] = line.split('|');
     return { number: Number(number), title, artist, query: `${title} ${artist}` };

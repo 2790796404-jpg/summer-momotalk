@@ -306,6 +306,13 @@ window.__biliTrackMap={
     "duration": 114,
     "play": 1028901
   },
+  "51": {
+    "matchedTitle": "Into the Night（用户提供来源）",
+    "bvid": "BV1554y1p7hF",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "52": {
     "matchedTitle": "I Can't Wait（用户提供来源）",
     "bvid": "BV15GmhBaEZF",
@@ -1074,6 +1081,13 @@ window.__biliTrackMap={
     "duration": 284,
     "play": 1427
   },
+  "191": {
+    "matchedTitle": "「悲しみは水のよう」(COVER版)（用户提供来源）",
+    "bvid": "BV1Da4y1v7HQ",
+    "author": "用户提供",
+    "duration": 0,
+    "play": 0
+  },
   "192": {
     "matchedTitle": "Tek It（氛围版）（用户提供来源）",
     "bvid": "BV1cj411s7cD",
@@ -1115,6 +1129,34 @@ window.__biliTrackMap={
     "author": "双笙子",
     "duration": 269,
     "play": 12363620
+  },
+  "201": {
+    "matchedTitle": "天气之子 - Grand Escape（钢琴）（用户提供来源）",
+    "bvid": "BV1cp4y147ex",
+    "author": "Animenz",
+    "duration": 0,
+    "play": 0
+  },
+  "202": {
+    "matchedTitle": "会呼吸的痛（DJ纯享版）（用户提供来源）",
+    "bvid": "BV1g9kBYzEdi",
+    "author": "梁静茹",
+    "duration": 0,
+    "play": 0
+  },
+  "203": {
+    "matchedTitle": "Time is broken（用户提供来源）",
+    "bvid": "BV1PksozEE1S",
+    "author": "氛围音乐",
+    "duration": 0,
+    "play": 0
+  },
+  "204": {
+    "matchedTitle": "明明一动不动但还是好热哦（Remix）（用户提供来源）",
+    "bvid": "BV13G4y1a7Mw",
+    "author": "quilt heron",
+    "duration": 0,
+    "play": 0
   }
 };
-window.__biliTrackCount=160;
+window.__biliTrackCount=166;
