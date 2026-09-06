@@ -260,10 +260,8 @@
     playButton.textContent = '▶';
     libraryPlaying = false;
   };
-  playlist.innerHTML = allTracks.map(track => {
-    const playableIndex = tracks.findIndex(item => item.number === track.number);
-    const playable = playableIndex >= 0;
-    return `<button class="${playableIndex === 0 ? 'active' : ''}${playable ? '' : ' source-pending'}"${playable ? ` data-track="${playableIndex}"` : ' aria-disabled="true"'}><i>${String(track.number).padStart(3, '0')}</i><span>${track.title}<small>${track.artist}</small></span><b>${playable ? 'B站' : '待补源'}</b></button>`;
+  playlist.innerHTML = tracks.map((track, playableIndex) => {
+    return `<button class="${playableIndex === 0 ? 'active' : ''}" data-track="${playableIndex}"><i>${String(track.number).padStart(3, '0')}</i><span>${track.title}<small>${track.artist}</small></span><b>B站</b></button>`;
   }).join('');
   playlist.addEventListener('click', event => {
     const button = event.target.closest('button[data-track]');
