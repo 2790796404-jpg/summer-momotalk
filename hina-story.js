@@ -15,6 +15,11 @@
     const status = document.createElement('small');
     status.className = 'hina-story-status';
     header.appendChild(status);
+    const loader = document.createElement('div');
+    loader.className = 'hina-momotalk-loader';
+    loader.setAttribute('aria-hidden', 'true');
+    loader.innerHTML = '<div class="hina-loader-stars"></div><div class="hina-loader-halo"><img src="assets/hina-halo-loading-transparent.png" alt=""></div><div class="hina-loader-copy"><b>Hina\'s summer vacation</b><span>正在连接桃信……</span><i></i></div><div class="hina-loader-waves"></div><div class="hina-loader-beach"></div>';
+    chat.appendChild(loader);
     let index = 1, started = false, locked = false;
 
     const showRecent = () => {
@@ -35,7 +40,14 @@
     const beginButton = () => {
       status.textContent = 'SUMMER INTERLUDE · 001 / 260';
       choices.innerHTML = '<button class="hina-start" type="button">开始对话 <span>▶</span></button>';
-      choices.querySelector('button').addEventListener('click', async () => { started = true; choices.innerHTML = ''; await present(); }, { once: true });
+      choices.querySelector('button').addEventListener('click', async () => {
+        loader.classList.add('show');
+        await wait(3400);
+        loader.classList.remove('show');
+        started = true;
+        choices.innerHTML = '';
+        await present();
+      }, { once: true });
     };
     const present = async () => {
       if (!started) return beginButton();
